@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>数组 | MikeAhHui</title><meta name="keywords" content="JavaScript"><meta name="author" content="MikeAhHui"><meta name="copyright" content="MikeAhHui"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="数组创建数组 new Array  new Array(长度) 只有一个参数的时候表示数组的长度，且数组中的每一项都为空 长度：数组里的数据总数，是一个非负整数  new Array(数据1, 数据2, ……) 当参数的数量大于1的时候表示创建一个初始化每一项的数组，数组的长度就是传入参数的个数    [数据1, 数据2, ……] 创建一个数组，并初始化其每一项   数组的本质数组的本质是一个对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组">
+<meta property="og:url" content="http://www.mikeahhui.com/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/index.html">
+<meta property="og:site_name" content="MikeAhHui">
+<meta property="og:description" content="数组创建数组 new Array  new Array(长度) 只有一个参数的时候表示数组的长度，且数组中的每一项都为空 长度：数组里的数据总数，是一个非负整数  new Array(数据1, 数据2, ……) 当参数的数量大于1的时候表示创建一个初始化每一项的数组，数组的长度就是传入参数的个数    [数据1, 数据2, ……] 创建一个数组，并初始化其每一项   数组的本质数组的本质是一个对象">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4ve76m.jpg">
+<meta property="article:published_time" content="2022-06-28T07:27:54.000Z">
+<meta property="article:modified_time" content="2022-06-28T08:15:49.705Z">
+<meta property="article:author" content="MikeAhHui">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4ve76m.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.mikeahhui.com/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数组',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-06-28 16:15:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avator.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4ve76m.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MikeAhHui</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数组</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-28T07:27:54.000Z" title="发表于 2022-06-28 15:27:54">2022-06-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-28T08:15:49.705Z" title="更新于 2022-06-28 16:15:49">2022-06-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/JavaScript/">JavaScript</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数组"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h2><ol>
+<li><p><code>new Array</code></p>
+<ul>
+<li><p><code>new Array(长度)</code></p>
+<p>只有一个参数的时候表示数组的长度，且数组中的每一项都为空</p>
+<p>长度：数组里的数据总数，是一个非负整数</p>
+</li>
+<li><p><code>new Array(数据1, 数据2, ……)</code></p>
+<p>当参数的数量大于1的时候表示创建一个初始化每一项的数组，数组的长度就是传入参数的个数</p>
+</li>
+</ul>
+</li>
+<li><p>[数据1, 数据2, ……]</p>
+<p>创建一个数组，并初始化其每一项</p>
+</li>
+</ol>
+<h2 id="数组的本质"><a href="#数组的本质" class="headerlink" title="数组的本质"></a>数组的本质</h2><p>数组的本质是一个对象</p>
+<ul>
+<li>数字字符串属性：叫做下标，也叫索引，相当于数组中每个数据的编号，从0开始</li>
+<li><code>length</code>属性：数组的长度，会自动变化，值为最大下标+1</li>
+</ul>
+<blockquote>
+<p>连续下标的取值范围：<code>0 ~ length - 1</code>，如果给<code>length</code>直接赋值，可能会导致数组被截断</p>
+<p><strong>在开发中，一般情况下不要给<code>length</code>赋值</strong></p>
+</blockquote>
+<h2 id="稀松数组"><a href="#稀松数组" class="headerlink" title="稀松数组"></a>稀松数组</h2><p>通常情况下，下标是连续的，结构比较紧凑，所以，下标不连续的数组就叫<strong>稀松数组</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>, , , <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组的常见操作"><a href="#数组的常见操作" class="headerlink" title="数组的常见操作"></a>数组的常见操作</h2><p><code>let arr = []</code></p>
+<h3 id="添加数组项"><a href="#添加数组项" class="headerlink" title="添加数组项"></a>添加数组项</h3><ul>
+<li><code>arr[长度] = 数据</code>：向数组末尾添加一个数据</li>
+<li><code>arr.push(数据)</code>：向数组的末尾添加一个数据</li>
+<li><code>arr.unshift(数据)</code>：向数组的起始位置添加一个数据，会导致数组每一项的下标向后移</li>
+<li><code>arr.splice(下标, 0, 数据)</code>：从指定下标位置开始，删除0个，然后再该位置插入添加的数据，如果下标超过范围，则按照范围的边界进行处理</li>
+</ul>
+<blockquote>
+<p><code>push、unshift、splice</code>可以添加多个数据</p>
+</blockquote>
+<h3 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h3><ul>
+<li><code>delete arr[下标]</code>：这种做法不会导数组其他属性发生变化，因此，这种做法会导致稀松数组，所以不推荐使用该方法</li>
+<li><code>arr.pop()</code>：删除数组的最后一项，并返回表达式最后一项（被删除项）的数据</li>
+<li><code>arr.shift()</code>：删除数组的第一项，该表达时返回第一项（被删除项）的数据</li>
+<li><code>arr.splice(下标，删除的数量，添加的数据)</code>：从指定下标位置开始，删除指定数量，然后在该位置插入添加的数据，如果下标超过范围，则按照范围的边界进行处理。返回一个新的数组（被删除的数据）</li>
+</ul>
+<h3 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h3><ul>
+<li><code>arr.slice(起始位置下标，结束位置下标)</code>：将起始位置到结束位置之间的数据拿出来，返回一个新的数组，不会改变原数组</li>
+</ul>
+<blockquote>
+<p>注意：</p>
+<ol>
+<li>结束下标取不到</li>
+<li>下标可以为负数，如果是负数，则从数组的末尾开始计算</li>
+<li>如果不写结束下标，则直接取到数组的末尾</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>清空数组</p>
+<ul>
+<li><code>arr.splice(0, arr.length)</code></li>
+<li><code>arr.length = 0</code></li>
+</ul>
+</li>
+<li><p>查找数组中某一项的下标</p>
+<ul>
+<li><p><code>arr.indexOf(数据)</code></p>
+<p>从数组中依次查找对应的数据，查找时使用严格相等比较，查找到第一个匹配的下标，返回，如果没有找到则返回-1</p>
+</li>
+<li><p><code>arr.lastIndexOf(数据)</code></p>
+<p>功能与<code>indexOf</code>类似，不同的是查找的是最后一个匹配的下标</p>
+</li>
+</ul>
+</li>
+<li><p><code>arr.fill(数据)</code>：将数组的所有项都填充为指定的数据</p>
+</li>
+</ul>
+<blockquote>
+<ol>
+<li><code>arr.fill(数据，开始下标)</code>：将数组从开始下标起，到数组末尾，填充为指定的数据</li>
+<li><code>arr.fill(数据，开始下标，结束下标)</code>：将数组从开始下标起，到数据的结束下标（取不到），填充为指定的数据</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>判断某个属性在对象中是否存在</p>
+<p><code>in</code>关键字</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&#x27;1&#x27;</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="string">&#x27;1&#x27;</span> <span class="keyword">in</span> arr; <span class="comment">// true</span></span><br><span class="line">num <span class="keyword">in</span> arr <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>注意：属性必须是字符串，如果是数字会自动转换为字符串，别的（如：直接写一个变量名）会报错</p>
+</blockquote>
+<h2 id="for-in-循环"><a href="#for-in-循环" class="headerlink" title="for in 循环"></a>for in 循环</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> 对象) &#123;</span><br><span class="line">    <span class="comment">// 循环体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：</p>
+<ol>
+<li><code>for in</code>循环遍历的是对象的属性，如：在数组中，遍历的就是数组的下标</li>
+<li><strong>当使用<code>for in</code>循环遍历稀松数组时，空数据是不会被遍历的（<code>for</code>循环和<code>for in</code>循环的区别），因此，当给稀松数组添加数据的时候，使用<code>for in</code>循环是添加不进去的……</strong></li>
+</ol>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://www.mikeahhui.com">MikeAhHui</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://www.mikeahhui.com/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/">http://www.mikeahhui.com/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.mikeahhui.com" target="_blank">MikeAhHui</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4ve76m.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/cl604g2al001i4owc513b9pn1/de518df32a40/"><img class="prev-cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-72rxqo.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">文件上传</div></div></a></div><div class="next-post pull-right"><a href="/cl604g2a6000q4owc3agxbdh1/c18fc70a82f2/"><img class="next-cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-48y7wy.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">函数</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/cl604g29r00074owc9w0r5wf8/ce84eb7de7be/" title="前言"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-49q5dk.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-22</div><div class="title">前言</div></div></a></div><div><a href="/cl604g29t00094owcdj9176j5/bb6d5ecd540b/" title="数据类型"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-0j1xm0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-22</div><div class="title">数据类型</div></div></a></div><div><a href="/cl604g29v000b4owc67jd84e6/fc2710fe313e/" title="变量"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4l5j3r.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-22</div><div class="title">变量</div></div></a></div><div><a href="/cl604g29x000f4owc2niod5sa/3b0a1d15f110/" title="流程控制"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4l5j3r.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-16</div><div class="title">流程控制</div></div></a></div><div><a href="/cl604g29y000g4owc407j0r3g/b6d72e2825e2/" title="运算符"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-2ew3pm.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-31</div><div class="title">运算符</div></div></a></div><div><a href="/cl604g2a6000q4owc3agxbdh1/c18fc70a82f2/" title="函数"><img class="cover" src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-48y7wy.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-04</div><div class="title">函数</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">MikeAhHui</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">1.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E7%BB%84"><span class="toc-number">1.1.</span> <span class="toc-text">创建数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-number">1.2.</span> <span class="toc-text">数组的本质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%80%E6%9D%BE%E6%95%B0%E7%BB%84"><span class="toc-number">1.3.</span> <span class="toc-text">稀松数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.</span> <span class="toc-text">数组的常见操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%95%B0%E7%BB%84%E9%A1%B9"><span class="toc-number">1.4.1.</span> <span class="toc-text">添加数组项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="toc-number">1.4.2.</span> <span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.3.</span> <span class="toc-text">其他操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for-in-%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.5.</span> <span class="toc-text">for in 循环</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cl604g29h00014owc7wwfdw0w/886168cf9c89/" title="Grid布局"><img src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-0j1xm0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Grid布局"/></a><div class="content"><a class="title" href="/cl604g29h00014owc7wwfdw0w/886168cf9c89/" title="Grid布局">Grid布局</a><time datetime="2022-07-19T03:22:32.000Z" title="发表于 2022-07-19 11:22:32">2022-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cl604g2bf00344owceefs2v7g/32fcb5830da9/" title="火狐浏览器下载PDF自动弹出预览页面，而不是直接下载"><img src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-2e7v1g.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="火狐浏览器下载PDF自动弹出预览页面，而不是直接下载"/></a><div class="content"><a class="title" href="/cl604g2bf00344owceefs2v7g/32fcb5830da9/" title="火狐浏览器下载PDF自动弹出预览页面，而不是直接下载">火狐浏览器下载PDF自动弹出预览页面，而不是直接下载</a><time datetime="2022-07-13T07:50:03.000Z" title="发表于 2022-07-13 15:50:03">2022-07-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cl604g2a6000q4owc3agxbdh1/c18fc70a82f2/" title="函数"><img src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-48y7wy.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="函数"/></a><div class="content"><a class="title" href="/cl604g2a6000q4owc3agxbdh1/c18fc70a82f2/" title="函数">函数</a><time datetime="2022-07-04T10:33:59.000Z" title="发表于 2022-07-04 18:33:59">2022-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/" title="数组"><img src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-4ve76m.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数组"/></a><div class="content"><a class="title" href="/cl604g2a2000l4owcd9njd6ni/0374d8fe7890/" title="数组">数组</a><time datetime="2022-06-28T07:27:54.000Z" title="发表于 2022-06-28 15:27:54">2022-06-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cl604g2al001i4owc513b9pn1/de518df32a40/" title="文件上传"><img src="https://object-srote-1305109524.cos.ap-beijing.myqcloud.com/wallpaper/wallhaven-72rxqo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文件上传"/></a><div class="content"><a class="title" href="/cl604g2al001i4owc513b9pn1/de518df32a40/" title="文件上传">文件上传</a><time datetime="2022-06-28T00:51:31.000Z" title="发表于 2022-06-28 08:51:31">2022-06-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By MikeAhHui</div><div class="framework-info"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">晋ICP备2021011849号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
